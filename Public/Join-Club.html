@@ -1,0 +1,114 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Academic Resource Portal | Sign In</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700;800&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="Join-Club.css" />
+  </head>
+  <body>
+    <header class="header">
+      <div class="container nav">
+        <a href="../../project/home.html" class="logo">
+          <img src="../../images/logo.jpg" alt="Logo" />
+          <div>
+            <h2>Academic Resource Portal</h2>
+            <span>Computer Science • B.Tech / M.Tech</span>
+          </div>
+        </a>
+        <div class="nav-btns">
+          <a href="../../home.html" class="btn-outline">Home</a>
+          <button onclick="history.back()" class="btn-primary">Back</button>
+        </div>
+      </div>
+    </header>
+
+    <main class="signin-section">
+      <div class="container signin-grid">
+        <section class="left">
+          <div class="badge">WELCOME BACK</div>
+          <h1>Access your Academic Resources.</h1>
+          <p>
+            Sign in to access previous year papers, notes, syllabus, assignments
+            and other academic resources.
+          </p>
+          <div class="features">
+            <div class="feature">
+              <div class="icon">📚</div>
+              <div>
+                <h3>Previous Papers</h3>
+                <p>Semester-wise resources</p>
+              </div>
+            </div>
+            <div class="feature">
+              <div class="icon">📝</div>
+              <div>
+                <h3>Notes</h3>
+                <p>Faculty & Student uploads</p>
+              </div>
+            </div>
+            <div class="feature">
+              <div class="icon">🎓</div>
+              <div>
+                <h3>One Portal</h3>
+                <p>Everything in one place</p>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <section class="right">
+          <div class="login-card">
+            <h2>Sign In</h2>
+            <form action="/join-club" method="POST">
+              <div class="field">
+                <label>Name</label>
+                <input
+                  type="text"
+                  name="name"
+                  placeholder="Enter your Name"
+                  required
+                />
+              </div>
+              <div class="field">
+                <label>Email Address</label>
+                <input
+                  type="email"
+                  name="email"
+                  placeholder="Enter your email"
+                  required
+                />
+              </div>
+
+              <div class="field">
+                <label>Branch</label>
+                <input
+                  type="text"
+                  name="branch"
+                  placeholder="Enter your Branch"
+                />
+              </div>
+              <div class="options">
+                <label><input type="checkbox" /> Remember Me</label>
+                <a href="#">Forgot Password?</a>
+              </div>
+              <button class="login-btn" type="submit">Sign In</button>
+              <p class="register">
+                Don't have an account?
+                <a href="Join-Club.html">Create Account</a>
+              </p>
+            </form>
+          </div>
+        </section>
+      </div>
+    </main>
+
+    <footer>© 2026 Academic Resource Portal • UPSIFS</footer>
+  </body>
+</html>

@@ -1,0 +1,258 @@
+/* ===========================
+   GLOBAL
+=========================== */
+
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+}
+
+body{
+    font-family:'Poppins',sans-serif;
+    overflow-x:hidden;
+    background:#fafafa;
+}
+
+/* ===========================
+   NAVBAR
+=========================== */
+
+.navbar{
+
+    position:sticky;
+    top:0;
+    left:0;
+
+    width:100%;
+
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+
+    padding:18px 5%;
+
+    background:#ffffff;
+
+    box-shadow:0 8px 25px rgba(0,0,0,.08);
+
+    z-index:1000;
+}
+
+/* ===========================
+   LOGO
+=========================== */
+
+.logo-section{
+
+    display:flex;
+    align-items:center;
+    gap:15px;
+
+}
+
+.logo-section img{
+
+    width:60px;
+    height:60px;
+
+    border-radius:50%;
+    object-fit:cover;
+
+    border:3px solid #800000;
+
+}
+
+.logo-section h2{
+
+    color:#800000;
+    font-size:22px;
+    font-weight:700;
+
+}
+
+.logo-section p{
+
+    color:#666;
+    font-size:14px;
+
+}
+
+/* ===========================
+   MENU
+=========================== */
+
+nav{
+
+    display:flex;
+    align-items:center;
+    gap:30px;
+
+}
+
+nav a{
+
+    text-decoration:none;
+    color:#444;
+
+    font-size:16px;
+    font-weight:500;
+
+    transition:.3s;
+    position:relative;
+
+}
+
+nav a:hover{
+
+    color:#800000;
+
+}
+
+nav a::after{
+
+    content:"";
+
+    position:absolute;
+
+    left:0;
+    bottom:-8px;
+
+    width:0;
+    height:3px;
+
+    background:#800000;
+
+    transition:.35s;
+
+}
+
+nav a:hover::after{
+
+    width:100%;
+
+}
+
+.active{
+
+    color:#800000;
+
+}
+
+.active::after{
+
+    width:100%;
+
+}
+
+/* ===========================
+   BUTTONS
+=========================== */
+
+.nav-buttons{
+
+    display:flex;
+    gap:12px;
+
+}
+
+.login-btn{
+
+    text-decoration:none;
+
+    padding:12px 24px;
+
+    border:2px solid #800000;
+
+    border-radius:12px;
+
+    color:#800000;
+
+    font-weight:600;
+
+    transition:.3s;
+
+}
+
+.login-btn:hover{
+
+    background:#800000;
+    color:white;
+
+}
+
+.signup-btn{
+
+    text-decoration:none;
+
+    padding:12px 24px;
+
+    border-radius:12px;
+
+    background:#800000;
+
+    color:white;
+
+    font-weight:600;
+
+    transition:.3s;
+
+}
+
+.signup-btn:hover{
+
+    background:#5c0000;
+
+}
+
+/* ===========================
+   TABLET
+=========================== */
+
+@media(max-width:1100px){
+
+.navbar{
+
+flex-wrap:wrap;
+justify-content:center;
+gap:20px;
+
+}
+
+nav{
+
+gap:20px;
+
+}
+
+}
+
+/* ===========================
+   MOBILE
+=========================== */
+
+@media(max-width:768px){
+
+.navbar{
+
+flex-direction:column;
+padding:20px;
+
+}
+
+nav{
+
+flex-wrap:wrap;
+justify-content:center;
+gap:15px;
+
+}
+
+.nav-buttons{
+
+width:100%;
+justify-content:center;
+
+}
+
+}

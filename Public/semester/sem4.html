@@ -1,0 +1,534 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>College — Sem 4 Papers</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="sem.css" />
+  <link rel="stylesheet" href="../Btech.css" />
+</head>
+
+<body>
+  <div id="splash" aria-hidden="true">
+    <img src="../images/logo.jpg" alt="College logo" class="hero-logo" />
+    <div class="inst-name">College Resource Portal</div>
+    <div class="inst-location">Computer Science — BTech / MTech</div>
+    <div class="inst-affiliation">
+      Uttar Pradesh State Institute of Forensic Science, Lucknow
+    </div>
+    <div class="loading" aria-hidden="true">
+      <div class="loading-bar"></div>
+    </div>
+  </div>
+
+  <div id="main">
+    <header class="header pro-header">
+      <div class="header-inner">
+        <a href="home.html" class="brand" aria-label="Go to home page">
+          <img src="../images/logo.jpg" class="brand-logo" alt="Institute logo" />
+          <div class="brand-text">
+            <div class="brand-title">College Resource Portal</div>
+            <div class="brand-sub">Computer Science — BTech / MTech</div>
+          </div>
+        </a>
+
+        <nav class="header-actions" aria-label="Page actions">
+          <a class="btn btn-home" href="../home.html">Home</a>
+          <button class="btn btn-home" onclick="history.back()">Back</button>
+        </nav>
+      </div>
+    </header>
+
+    <main>
+      <section class="hero-strip">
+        <div class="container hero-grid">
+          <div class="hero-copy">
+            <div class="hero-badge">Semester 4 Papers</div>
+            <h1>Find notes and question papers in one place.</h1>
+            <p>
+              Choose a subject, pick the academic year, then open the correct exam paper.
+              The layout is designed to be fast, clean, and easy to use on mobile too.
+            </p>
+
+            <div class="hero-actions">
+              <a href="#subjects" class="primary-btn">Browse Subjects</a>
+              <a href="#help" class="secondary-btn">How it works</a>
+            </div>
+          </div>
+
+          <aside class="hero-panel" aria-label="Quick information">
+            <div class="hero-panel-card">
+              <span>Program</span>
+              <strong>BTech / MTech</strong>
+            </div>
+            <div class="hero-panel-card">
+              <span>University</span>
+              <strong>College + University</strong>
+            </div>
+            <div class="hero-panel-card">
+              <span>Exam Types</span>
+              <strong>TA, Mid Sem, End Sem</strong>
+            </div>
+          </aside>
+        </div>
+      </section>
+
+      <section class="search-section">
+        <div class="container">
+          <h2>Search papers faster</h2>
+          <form class="search-box" onsubmit="return false;">
+            <input type="text" placeholder="Search subject, year, university or exam type..." aria-label="Search papers" />
+            <button type="submit">Search</button>
+          </form>
+        </div>
+      </section>
+
+      <section class="stats" aria-label="Portal highlights">
+        <article class="stat-card">
+          <h2>06+</h2>
+          <p>Subjects listed in Semester 4</p>
+        </article>
+        <article class="stat-card">
+          <h2>02</h2>
+          <p>Universities supported</p>
+        </article>
+        <article class="stat-card">
+          <h2>03</h2>
+          <p>Exam types per subject</p>
+        </article>
+        <article class="stat-card">
+          <h2>100%</h2>
+          <p>Simple and responsive layout</p>
+        </article>
+      </section>
+
+      <section class="semester-section" id="subjects">
+        <div class="container">
+          <div class="section-heading">
+            <h2>Semester 4 Subjects & Papers</h2>
+            <p>Open a subject card and select the exact paper you need.</p>
+          </div>
+
+          <div class="subject-grid">
+
+            <article class="subject-card">
+              <button class="subject-toggle" type="button">
+                <span class="subject-icon">⚙</span>
+                <span class="subject-title">Engineering Mathematics – 4</span>
+                <span class="toggle-arrow">▶</span>
+              </button>
+
+              <div class="subject-body">
+                <div class="level">
+                  <h4>Year</h4>
+                  <div class="row">
+                    <button class="btn-ghost year-btn" data-year="2025" type="button">2025-2026</button>
+                  </div>
+                </div>
+
+                <div class="level uni-col">
+                  <h4>University</h4>
+                  <div class="row">
+                    <button class="btn-ghost uni-btn" data-uni="College" type="button">College</button>
+                    <button class="btn-ghost uni-btn" data-uni="University" type="button">University</button>
+                  </div>
+                </div>
+
+                <div class="level exams-col">
+                  <h4>Exam Type</h4>
+
+                  <div class="exams" data-year="2024-2025" data-uni="College">
+                    <a class="exam-link" href="../files/sem4/ta-sem-2024-2025.pdf" target="_blank" rel="noopener">TA</a>
+                    <a class="exam-link" href="../files/sem4/mid-sem-2024-2025.pdf" target="_blank" rel="noopener">MID SEM</a>
+                    <a class="exam-link" href="../files/sem4/end-sem-2024-2025.pdf" target="_blank" rel="noopener">END SEM</a>
+                  </div>
+
+                  <div class="exams" data-year="2025-2026" data-uni="College">
+                    <a class="exam-link" href="../files/sem4/ta-sem-2025-2026.pdf" target="_blank" rel="noopener">TA</a>
+                    <a class="exam-link" href="../files/sem4/mid-sem-2025-2026.pdf" target="_blank" rel="noopener">MID SEM</a>
+                    <a class="exam-link" href="../files/sem4/end-sem-2025-2026.pdf" target="_blank" rel="noopener">END SEM</a>
+                  </div>
+
+                  <div class="exams" data-year="2024-2025" data-uni="University">
+                    <a class="exam-link" href="https://drive.google.com/drive/folders/1JjibQEPMlQ9Ykg22Cdli68F_S_dYeftC" target="_blank" rel="noopener">Exam paper</a>
+                  </div>
+
+                  <div class="exams" data-year="2025-2026" data-uni="University">
+                    <a class="exam-link" href="pdfs/University_physics_2025_ta.pdf" target="_blank" rel="noopener">Exam paper</a>
+                  </div>
+                </div>
+              </div>
+            </article>
+
+            <article class="subject-card">
+              <button class="subject-toggle" type="button">
+                <span class="subject-icon">∑</span>
+                <span class="subject-title">Computer Networks</span>
+                <span class="toggle-arrow">▶</span>
+              </button>
+
+              <div class="subject-body">
+                <div class="level">
+                  <h4>Year</h4>
+                  <div class="row">
+                    <button class="btn-ghost year-btn" data-year="2024" type="button">2024</button>
+                    <button class="btn-ghost year-btn" data-year="2025" type="button">2025</button>
+                  </div>
+                </div>
+
+                <div class="level uni-col">
+                  <h4>University</h4>
+                  <div class="row">
+                    <button class="btn-ghost uni-btn" data-uni="College" type="button">College</button>
+                    <button class="btn-ghost uni-btn" data-uni="University" type="button">University</button>
+                  </div>
+                </div>
+
+                <div class="level exams-col">
+                  <h4>Exam Type</h4>
+
+                  <div class="exams" data-year="2024" data-uni="College">
+                    <a class="exam-link" href="../files/sem4/ta-sem-2024-2025.pdf" target="_blank" rel="noopener">TA</a>
+                    <a class="exam-link" href="../files/sem4/mid-sem-2024-2025.pdf" target="_blank" rel="noopener">MID SEM</a>
+                    <a class="exam-link" href="../files/sem4/end-sem-2024-2025.pdf" target="_blank" rel="noopener">END SEM</a>
+                  </div>
+
+                  <div class="exams" data-year="2025" data-uni="College">
+                    <a class="exam-link" href="../files/sem4/ta-sem-2025-2026.pdf" target="_blank" rel="noopener">TA</a>
+                    <a class="exam-link" href="../files/sem4/mid-sem-2025-2026.pdf" target="_blank" rel="noopener">MID SEM</a>
+                    <a class="exam-link" href="../files/sem4/end-sem-2025-2026.pdf" target="_blank" rel="noopener">END SEM</a>
+                  </div>
+
+                  <div class="exams" data-year="2024" data-uni="University">
+                    <a class="exam-link" href="https://drive.google.com/drive/folders/1JjibQEPMlQ9Ykg22Cdli68F_S_dYeftC" target="_blank" rel="noopener">Exam paper</a>
+                  </div>
+
+                  <div class="exams" data-year="2025" data-uni="University">
+                    <a class="exam-link" href="pdfs/University_physics_2025_ta.pdf" target="_blank" rel="noopener">Exam paper</a>
+                  </div>
+                </div>
+              </div>
+            </article>
+
+            <article class="subject-card">
+              <button class="subject-toggle" type="button">
+                <span class="subject-icon">⏻</span>
+                <span class="subject-title">Microprocessor and Microcontroller</span>
+                <span class="toggle-arrow">▶</span>
+              </button>
+
+              <div class="subject-body">
+                <div class="level">
+                  <h4>Year</h4>
+                  <div class="row">
+                    <button class="btn-ghost year-btn" data-year="2024" type="button">2024</button>
+                    <button class="btn-ghost year-btn" data-year="2025" type="button">2025</button>
+                  </div>
+                </div>
+
+                <div class="level uni-col">
+                  <h4>University</h4>
+                  <div class="row">
+                    <button class="btn-ghost uni-btn" data-uni="College" type="button">College</button>
+                    <button class="btn-ghost uni-btn" data-uni="University" type="button">University</button>
+                  </div>
+                </div>
+
+                <div class="level exams-col">
+                  <h4>Exam Type</h4>
+
+                  <div class="exams" data-year="2024" data-uni="College">
+                    <a class="exam-link" href="../files/sem4/ta-sem-2024-2025.pdf" target="_blank" rel="noopener">TA</a>
+                    <a class="exam-link" href="../files/sem4/mid-sem-2024-2025.pdf" target="_blank" rel="noopener">MID SEM</a>
+                    <a class="exam-link" href="../files/sem4/end-sem-2024-2025.pdf" target="_blank" rel="noopener">END SEM</a>
+                  </div>
+
+                  <div class="exams" data-year="2025" data-uni="College">
+                    <a class="exam-link" href="../files/sem4/ta-sem-2025-2026.pdf" target="_blank" rel="noopener">TA</a>
+                    <a class="exam-link" href="../files/sem4/mid-sem-2025-2026.pdf" target="_blank" rel="noopener">MID SEM</a>
+                    <a class="exam-link" href="../files/sem4/end-sem-2025-2026.pdf" target="_blank" rel="noopener">END SEM</a>
+                  </div>
+
+                  <div class="exams" data-year="2024" data-uni="University">
+                    <a class="exam-link" href="https://drive.google.com/drive/folders/1JjibQEPMlQ9Ykg22Cdli68F_S_dYeftC" target="_blank" rel="noopener">Exam paper</a>
+                  </div>
+
+                  <div class="exams" data-year="2025" data-uni="University">
+                    <a class="exam-link" href="pdfs/University_physics_2025_ta.pdf" target="_blank" rel="noopener">Exam paper</a>
+                  </div>
+                </div>
+              </div>
+            </article>
+
+            <article class="subject-card">
+              <button class="subject-toggle" type="button">
+                <span class="subject-icon">C</span>
+                <span class="subject-title">Operating System</span>
+                <span class="toggle-arrow">▶</span>
+              </button>
+
+              <div class="subject-body">
+                <div class="level">
+                  <h4>Year</h4>
+                  <div class="row">
+                    <button class="btn-ghost year-btn" data-year="2024" type="button">2024</button>
+                    <button class="btn-ghost year-btn" data-year="2025" type="button">2025</button>
+                  </div>
+                </div>
+
+                <div class="level uni-col">
+                  <h4>University</h4>
+                  <div class="row">
+                    <button class="btn-ghost uni-btn" data-uni="College" type="button">College</button>
+                    <button class="btn-ghost uni-btn" data-uni="University" type="button">University</button>
+                  </div>
+                </div>
+
+                <div class="level exams-col">
+                  <h4>Exam Type</h4>
+
+                  <div class="exams" data-year="2024" data-uni="College">
+                    <a class="exam-link" href="../files/sem4/ta-sem-2024-2025.pdf" target="_blank" rel="noopener">TA</a>
+                    <a class="exam-link" href="../files/sem4/mid-sem-2024-2025.pdf" target="_blank" rel="noopener">MID SEM</a>
+                    <a class="exam-link" href="../files/sem4/end-sem-2024-2025.pdf" target="_blank" rel="noopener">END SEM</a>
+                  </div>
+
+                  <div class="exams" data-year="2025" data-uni="College">
+                    <a class="exam-link" href="../files/sem4/ta-sem-2025-2026.pdf" target="_blank" rel="noopener">TA</a>
+                    <a class="exam-link" href="../files/sem4/mid-sem-2025-2026.pdf" target="_blank" rel="noopener">MID SEM</a>
+                    <a class="exam-link" href="../files/sem4/end-sem-2025-2026.pdf" target="_blank" rel="noopener">END SEM</a>
+                  </div>
+
+                  <div class="exams" data-year="2024" data-uni="University">
+                    <a class="exam-link" href="https://drive.google.com/drive/folders/1JjibQEPMlQ9Ykg22Cdli68F_S_dYeftC" target="_blank" rel="noopener">Exam paper</a>
+                  </div>
+
+                  <div class="exams" data-year="2025" data-uni="University">
+                    <a class="exam-link" href="pdfs/University_physics_2025_ta.pdf" target="_blank" rel="noopener">Exam paper</a>
+                  </div>
+                </div>
+              </div>
+            </article>
+
+            <article class="subject-card">
+              <button class="subject-toggle" type="button">
+                <span class="subject-icon">▭</span>
+                <span class="subject-title">Cryptography</span>
+                <span class="toggle-arrow">▶</span>
+              </button>
+
+              <div class="subject-body">
+                <div class="level">
+                  <h4>Year</h4>
+                  <div class="row">
+                    <button class="btn-ghost year-btn" data-year="2024" type="button">2024</button>
+                    <button class="btn-ghost year-btn" data-year="2025" type="button">2025</button>
+                  </div>
+                </div>
+
+                <div class="level uni-col">
+                  <h4>University</h4>
+                  <div class="row">
+                    <button class="btn-ghost uni-btn" data-uni="College" type="button">College</button>
+                    <button class="btn-ghost uni-btn" data-uni="University" type="button">University</button>
+                  </div>
+                </div>
+
+                <div class="level exams-col">
+                  <h4>Exam Type</h4>
+
+                  <div class="exams" data-year="2024" data-uni="College">
+                    <a class="exam-link" href="../files/sem4/ta-sem-2024-2025.pdf" target="_blank" rel="noopener">TA</a>
+                    <a class="exam-link" href="../files/sem4/mid-sem-2024-2025.pdf" target="_blank" rel="noopener">MID SEM</a>
+                    <a class="exam-link" href="../files/sem4/end-sem-2024-2025.pdf" target="_blank" rel="noopener">END SEM</a>
+                  </div>
+
+                  <div class="exams" data-year="2025" data-uni="College">
+                    <a class="exam-link" href="../files/sem4/ta-sem-2025-2026.pdf" target="_blank" rel="noopener">TA</a>
+                    <a class="exam-link" href="../files/sem4/mid-sem-2025-2026.pdf" target="_blank" rel="noopener">MID SEM</a>
+                    <a class="exam-link" href="../files/sem4/end-sem-2025-2026.pdf" target="_blank" rel="noopener">END SEM</a>
+                  </div>
+
+                  <div class="exams" data-year="2024" data-uni="University">
+                    <a class="exam-link" href="https://drive.google.com/drive/folders/1JjibQEPMlQ9Ykg22Cdli68F_S_dYeftC" target="_blank" rel="noopener">Exam paper</a>
+                  </div>
+
+                  <div class="exams" data-year="2025" data-uni="University">
+                    <a class="exam-link" href="pdfs/University_physics_2025_ta.pdf" target="_blank" rel="noopener">Exam paper</a>
+                  </div>
+                </div>
+              </div>
+            </article>
+
+            <article class="subject-card">
+              <button class="subject-toggle" type="button">
+                <span class="subject-icon">✉</span>
+                <span class="subject-title">.Net Programming</span>
+                <span class="toggle-arrow">▶</span>
+              </button>
+
+              <div class="subject-body">
+                <div class="level">
+                  <h4>Year</h4>
+                  <div class="row">
+                    <button class="btn-ghost year-btn" data-year="2024" type="button">2024</button>
+                    <button class="btn-ghost year-btn" data-year="2025" type="button">2025</button>
+                  </div>
+                </div>
+
+                <div class="level uni-col">
+                  <h4>University</h4>
+                  <div class="row">
+                    <button class="btn-ghost uni-btn" data-uni="College" type="button">College</button>
+                    <button class="btn-ghost uni-btn" data-uni="University" type="button">University</button>
+                  </div>
+                </div>
+
+                <div class="level exams-col">
+                  <h4>Exam Type</h4>
+
+                  <div class="exams" data-year="2024" data-uni="College">
+                    <a class="exam-link" href="../files/sem4/ta-sem-2024-2025.pdf" target="_blank" rel="noopener">TA</a>
+                    <a class="exam-link" href="../files/sem4/mid-sem-2024-2025.pdf" target="_blank" rel="noopener">MID SEM</a>
+                    <a class="exam-link" href="../files/sem4/end-sem-2024-2025.pdf" target="_blank" rel="noopener">END SEM</a>
+                  </div>
+
+                  <div class="exams" data-year="2025" data-uni="College">
+                    <a class="exam-link" href="../files/sem4/ta-sem-2025-2026.pdf" target="_blank" rel="noopener">TA</a>
+                    <a class="exam-link" href="../files/sem4/mid-sem-2025-2026.pdf" target="_blank" rel="noopener">MID SEM</a>
+                    <a class="exam-link" href="../files/sem4/end-sem-2025-2026.pdf" target="_blank" rel="noopener">END SEM</a>
+                  </div>
+
+                  <div class="exams" data-year="2024" data-uni="University">
+                    <a class="exam-link" href="https://drive.google.com/drive/folders/1JjibQEPMlQ9Ykg22Cdli68F_S_dYeftC" target="_blank" rel="noopener">Exam paper</a>
+                  </div>
+
+                  <div class="exams" data-year="2025" data-uni="University">
+                    <a class="exam-link" href="pdfs/University_physics_2025_ta.pdf" target="_blank" rel="noopener">Exam paper</a>
+                  </div>
+                </div>
+              </div>
+            </article>
+
+          </div>
+        </div>
+      </section>
+
+      <section class="help-section" id="help">
+        <div class="container">
+          <div class="section-heading">
+            <h2>How to use this page</h2>
+          </div>
+
+          <div class="help-grid">
+            <article class="help-card">
+              <h3>1. Open a subject</h3>
+              <p>Click the subject header to expand the card.</p>
+            </article>
+            <article class="help-card">
+              <h3>2. Pick year and university</h3>
+              <p>Select the correct academic year and university block.</p>
+            </article>
+            <article class="help-card">
+              <h3>3. Open the paper</h3>
+              <p>Tap TA, Mid Sem, or End Sem to open the PDF in a new tab.</p>
+            </article>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer class="footer">
+      Uttar Pradesh State Institute of Forensic Science, Lucknow
+    </footer>
+  </div>
+
+  <script>
+    function updateHeight(card) {
+      const body = card.querySelector(".subject-body");
+      body.style.maxHeight = "none";
+      body.style.maxHeight = body.scrollHeight + "px";
+    }
+
+    function collapseCard(card) {
+      const body = card.querySelector(".subject-body");
+      body.style.maxHeight = null;
+      card.classList.remove("open");
+    }
+
+    function openCard(card) {
+      const body = card.querySelector(".subject-body");
+      body.style.maxHeight = body.scrollHeight + "px";
+      card.classList.add("open");
+    }
+
+    document.querySelectorAll(".subject-card").forEach(card => {
+      const toggle = card.querySelector(".subject-toggle");
+      const body = card.querySelector(".subject-body");
+
+      toggle.addEventListener("click", () => {
+        document.querySelectorAll(".subject-card").forEach(other => {
+          if (other !== card) collapseCard(other);
+        });
+
+        if (body.style.maxHeight) {
+          collapseCard(card);
+        } else {
+          openCard(card);
+        }
+      });
+
+      card.querySelectorAll(".year-btn").forEach(btn => {
+        btn.addEventListener("click", () => {
+          card.querySelectorAll(".year-btn").forEach(b => b.classList.remove("active"));
+          btn.classList.add("active");
+
+          const uniCol = card.querySelector(".uni-col");
+          uniCol.style.display = "block";
+
+          const examsCol = card.querySelector(".exams-col");
+          examsCol.style.display = "block";
+
+          card.querySelectorAll(".exams").forEach(e => e.style.display = "none");
+          card.querySelectorAll(".uni-btn").forEach(b => b.classList.remove("active"));
+
+          updateHeight(card);
+        });
+      });
+
+      card.querySelectorAll(".uni-btn").forEach(btn => {
+        btn.addEventListener("click", () => {
+          card.querySelectorAll(".uni-btn").forEach(b => b.classList.remove("active"));
+          btn.classList.add("active");
+
+          const year = card.querySelector(".year-btn.active")?.dataset.year;
+          const uni = btn.dataset.uni;
+
+          const examsCol = card.querySelector(".exams-col");
+          examsCol.style.display = "block";
+
+          card.querySelectorAll(".exams").forEach(e => e.style.display = "none");
+
+          const target = card.querySelector(`.exams[data-year="${year}"][data-uni="${uni}"]`);
+          if (target) target.style.display = "flex";
+
+          updateHeight(card);
+        });
+      });
+    });
+
+    window.addEventListener("load", () => {
+      const splash = document.getElementById("splash");
+      const main = document.getElementById("main");
+
+      setTimeout(() => {
+        splash.classList.add("fade-out");
+        main.classList.add("show-main");
+      }, 2200);
+    });
+  </script>
+</body>
+</html>

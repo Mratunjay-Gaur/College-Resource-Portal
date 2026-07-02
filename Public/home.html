@@ -1,0 +1,95 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <title>College Resource Portal</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&display=swap"
+      rel="stylesheet"
+    />
+
+    <link rel="stylesheet" href="Btech.css" />
+    <link rel="stylesheet" href="Navbar.css" />
+    <link rel="stylesheet" href="Footer.css" />
+  </head>
+
+  <body>
+    <!-- ================= SPLASH SCREEN ================= -->
+
+    <div id="splash">
+      <img src="../images/logo.jpg" class="hero-logo" alt="College Logo" />
+
+      <h2 class="inst-name">
+        Academic Resource Portal
+      </h2>
+
+      <p class="inst-location">Lucknow, Uttar Pradesh</p>
+
+      <p class="inst-affiliation">
+        Affiliated with  Sciences University , Approved
+        by AICTE & BCI, Government of India.
+      </p>
+
+      <div class="loading">
+        <div class="loading-bar"></div>
+      </div>
+    </div>
+
+    <!-- ================= MAIN PAGE ================= -->
+
+    <main id="main">
+      <section class="hero">
+        <div class="hero-left">
+          <span class="hero-badge"> College • University Resource Portal </span>
+
+          <h1>
+            Welcome To
+
+            <span> College Resource Portal </span>
+          </h1>
+
+          <p>
+            Access Previous Year Question Papers, Notes, Lab Manuals, Practical
+            Files, Syllabus, and all academic resources from one modern
+            platform.
+          </p>
+
+          <div class="hero-buttons">
+            <a href="#" class="primary-btn"> B.Sc – M.Sc </a>
+
+            <a href="Btech.html" class="secondary-btn"> B.Tech – M.Tech </a>
+
+            <a href="#" class="primary-btn"> B.Sc LL.B </a>
+          </div>
+        </div>
+
+        <div class="hero-right">
+          <div class="hero-circle"></div>
+
+          <img src="../images/logo.jpg" class="hero-logo" alt="College Logo" />
+        </div>
+      </section>
+    </main>
+
+    <script>
+      window.addEventListener("load", () => {
+        const splash = document.getElementById("splash");
+
+        const main = document.getElementById("main");
+
+        setTimeout(() => {
+          splash.classList.add("fade-out");
+
+          main.classList.add("show-main");
+        }, 2500);
+      });
+    </script>
+  </body>
+</html>

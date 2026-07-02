@@ -1,0 +1,240 @@
+/* ==========================================
+            FOOTER
+========================================== */
+
+.footer{
+
+    margin-top:100px;
+
+    background:#800000;
+
+    color:#ffffff;
+
+}
+
+/* ==========================================
+        FOOTER CONTAINER
+========================================== */
+
+.footer-container{
+
+    width:min(1200px,90%);
+
+    margin:auto;
+
+    display:grid;
+
+    grid-template-columns:2fr 1fr 1fr;
+
+    gap:60px;
+
+    padding:70px 0;
+
+}
+
+/* ==========================================
+        ABOUT
+========================================== */
+
+.footer-about img{
+
+    width:80px;
+    height:80px;
+
+    border-radius:50%;
+
+    border:4px solid #ffffff;
+
+    object-fit:cover;
+
+    margin-bottom:20px;
+
+}
+
+.footer-about h2{
+
+    font-size:28px;
+
+    margin-bottom:18px;
+
+    font-weight:700;
+
+}
+
+.footer-about p{
+
+    color:#f4eaea;
+
+    line-height:1.8;
+
+    max-width:420px;
+
+}
+
+/* ==========================================
+        LINKS
+========================================== */
+
+.footer-links h3,
+.footer-contact h3{
+
+    font-size:22px;
+
+    margin-bottom:25px;
+
+}
+
+.footer-links{
+
+    display:flex;
+
+    flex-direction:column;
+
+}
+
+.footer-links a{
+
+    text-decoration:none;
+
+    color:#ffffff;
+
+    margin-bottom:14px;
+
+    transition:.3s;
+
+}
+
+.footer-links a:hover{
+
+    color:#FFD8D8;
+
+    padding-left:8px;
+
+}
+
+/* ==========================================
+        CONTACT
+========================================== */
+
+.footer-contact p{
+
+    margin-bottom:15px;
+
+    color:#f4eaea;
+
+    line-height:1.7;
+
+}
+
+/* ==========================================
+        BOTTOM
+========================================== */
+
+.footer-bottom{
+
+    text-align:center;
+
+    padding:25px 0;
+
+}
+
+.footer-bottom hr{
+
+    width:90%;
+
+    margin:auto;
+
+    margin-bottom:20px;
+
+    border:none;
+
+    border-top:1px solid rgba(255,255,255,.25);
+
+}
+
+.footer-bottom p{
+
+    color:#f3eaea;
+
+    font-size:15px;
+
+}
+
+.footer-bottom span{
+
+    color:#FFD8D8;
+
+    font-weight:700;
+
+}
+
+/* ==========================================
+        TABLET
+========================================== */
+
+@media(max-width:900px){
+
+.footer-container{
+
+grid-template-columns:1fr;
+
+text-align:center;
+
+gap:40px;
+
+}
+
+.footer-about p{
+
+margin:auto;
+
+}
+
+}
+
+/* ==========================================
+        MOBILE
+========================================== */
+
+@media(max-width:600px){
+
+.footer{
+
+margin-top:70px;
+
+}
+
+.footer-container{
+
+padding:50px 20px;
+
+}
+
+.footer-about h2{
+
+font-size:24px;
+
+}
+
+.footer-links h3,
+.footer-contact h3{
+
+font-size:20px;
+
+}
+
+.footer-bottom{
+
+padding:20px 15px;
+
+}
+
+.footer-bottom p{
+
+font-size:14px;
+
+line-height:1.6;
+
+}
+
+}
